@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Bibliotheque de Quartier</h1>
+
+        <nav>
+            <a href="../index.html">Tableau de bord</a>
+            <a href="livres.html">Livres</a>
+            <a href="adherents.html">adherents</a>
+            <a href="auteurs.html">Auteurs</a>
+            <a href="emprunts.html">Emprunts</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Gestion des emprunts</h2>
+
+        <form id="form-empunt">
+            <select name="adherents" id="adherents_id">
+                <option value="">selectionner un adherents</option>
+            </select>
+
+            <select name="" id="livres_id"> <option value="">selectionner un livre disponnible</option> </select>
+            <button type="submit">enregistrer l'emprunt</button>
+        </form>
+        <h2>Emprunts en cours</h2>
+        <ul id="liste-emprunts"></ul>
+    </main>
+    <script src="../js/api.js"></script>
+<script src="../js/emprunts.js"></script>
+</body>
+</html>

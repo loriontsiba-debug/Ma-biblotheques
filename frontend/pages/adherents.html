@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>>Bibliotheque -adherents</title>
+</head>
+<body>
+    <header>
+        <h1>Bibliotheque de Quartier</h1>
+
+        <nav>
+            <a href="../index.html">Tableau de bord</a>
+            <a href="livres.html">Livres</a>
+            <a href="adherents.html">adherents</a>
+            <a href="auteurs.html">Auteurs</a>
+            <a href="emprunts.html">Emprunts</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Gestion des adherents</h2>
+        <form action="" id="form-adherents">
+            <input type="text" id="nom" placeholder="nom de l'adherents" required>
+            <input type="email" id="contact" placeholder="adresse mail" required>
+             <button type="submit"> ajouter l'adherent</button>
+        </form>
+
+        <ul id="liste-adherents"></ul>
+    </main>
+    <script src="../js/api.js"></script>
+<script src="../js/adherents.js"></script>
+</body>
+</html>
