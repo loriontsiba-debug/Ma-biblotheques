@@ -19,7 +19,7 @@ async function request(endpoint , option = {}) {
         const data = text ? JSON.parse(text) : {};
 
         if(!response.ok){
-            //const errorTest = await response.text()
+            const errorTest = await response.text()
             throw new Error(errorTest || 'une erreur est survenue');
         }
         return data

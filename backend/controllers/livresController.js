@@ -50,7 +50,7 @@ exports.ajouterLivres = async (req, res, next)=>{
         if(!titre || !auteur_id){
             return res.status(404).json({msg : 'le titre et auteur sont obligatoir'})
         }
-        const result =  await pool.query(` insert into  livres (titre, annee_publication, auteur_id, statut) values($1, $2, $3,$4) returning*`, [titre.trim(), annee_publication || null, auteur_id, 'dispobible']
+        const result =  await pool.query(` insert into  livres (titre, annee_publication, auteur_id) values($1, $2, $3) returning*`, [titre.trim(), annee_publication || null, auteur_id /*'dispobible' || n*/]
     );
     res.status(201).json(result.rows[0])
 }

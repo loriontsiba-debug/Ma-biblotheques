@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 body : JSON.stringify({
                     titre,
                     annee_publication: annee_publication? parseInt (annee_publication) : null,
-                    auteur_id : parseInt(auteur_id)
+                    auteur_id : parseInt(auteur_id),
+                    //statut : 'disponible' || 'emprunt'
                 })
             })
             form.reset();
