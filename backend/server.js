@@ -1,4 +1,6 @@
-const app  = require("./app")
+const express  = require('express');
+const app = express();
+//const app  = require("./app")
 require('dotenv').config();// le module pour garder mes information personnel
 const cors = require('cors');
 const path = require('path')
