@@ -14,7 +14,7 @@ const validation = require('./middlewares/validation')
 
 const PORT= process.env.PORT || 5000;
 //midleware pour la gestion d'erreur
-app.use(express.static(path.join(__dirname, ('public'))));
+app.use(express.static(path.join(__dirname, ('public')))),
 /*app.get('/', (req, res)=>{
     res.send('bienvenu sur votre api')
 })*/
