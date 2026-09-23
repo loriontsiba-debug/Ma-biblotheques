@@ -1,5 +1,5 @@
 # Bibliotheque
-#instruction d'installation et initialisation de la bases de donnée 
+#instruction d'installation et initialisation de la bases de donnée  en local 
 
 etape 1
 
@@ -21,3 +21,4 @@ et importer la base de donnée
 etape 5
 
 -lancer le live serveur sur vs pour voir le rendu
+
