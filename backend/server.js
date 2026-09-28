@@ -1,7 +1,7 @@
 const app  = require("./app")
 require('dotenv').config();// le module pour garder mes information personnel
 const cors = require('cors');
-const path = require('path')
+const path = require('path');
 //importation des routes
 const arrorHandler = require('./middlewares/arrorHandler');
 const logger = require('./middlewares/logger')
