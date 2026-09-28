@@ -3,13 +3,13 @@ require('dotenv').config();// le module pour garder mes information personnel
 
 
 const pool =  new Pool({
-/*connectionString : process.env.DATABASE_URL,
-ssl : process.env.DATABASE_URL ?{rejectUnauthorized : false} : false,*/
-user : process.env.user,
+connectionString : process.env.DATABASE_URL,
+ssl : process.env.DATABASE_URL ?{rejectUnauthorized : false} : false,
+/*user : process.env.user,
 host:  process.env.host,
 password: process.env.password,
 database: process.env.db_name,
-port: process.env.db_PORT,
+port: process.env.db_PORT,*/
 });
 
 //confirmation de la connection à la base donnéé
