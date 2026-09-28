@@ -11,5 +11,4 @@ router.post('/', validerAuteur, auteurController.creerAuteur)
 router.put('/:id', auteurController.modifierAuteur)
 router.delete('/:id', auteurController.supprimerAteur)
 
-module.exports  = router
- 
+module.exports  = router; 

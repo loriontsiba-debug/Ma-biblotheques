@@ -61,16 +61,16 @@ async function chargerLivresDisponiblesOption(){
         if(!select) return;
         
         select.innerHTML = '<option value=""> selectionner un livre disponible</option>'
-        if(!Array.isArray(livres))  returns;
+        if(!Array.isArray(livres))  return;
         //filtrons les livres disponible
-    /*const disponible = livres.filter(l => !l.statut || l.statut =='disponible');
+    const disponible = livres.filter(l => !l.statut || l.statut =='disponible');
 
     disponible.forEach(L =>{
         const option =  document.createElement('option');
         option.value = L.id;
         option.textContent = L.titre;
         select.appendChild(option)
-    })*/
+    })
     }
     catch(err){
         console.error("erreu chargement livres : ", err);
@@ -105,7 +105,7 @@ async function chargerEmprunts(){
         })
     
         liste.appendChild(li)
-    
+         li.appendChild(btnRetour)
             }else{
                 li.textContent += '[retour]';
             }

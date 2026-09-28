@@ -1,5 +1,5 @@
 /*Nom de la base de donnéé*/
-\c bibliotheque_db
+/*\c  bibliotheque_db */
 
 /* CREATION DES TABLES*/
 /* table auteurs*/

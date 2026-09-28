@@ -20,7 +20,7 @@ async function request(endpoint , option = {}) {
 
         if(!response.ok){
             const errorTest = await response.text()
-            throw new Error(errorTest || 'une erreur est survenue');
+            throw new Error(data.message || errorTest || 'une erreur est survenue');
         }
         return data
     }catch(error){

@@ -11,13 +11,12 @@ const adherentsRoutes = require('./routes/adherentRoutes')
 const livresRouter = require('./routes/livresRoutes')
 const empruntRouter =  require('./routes/empruntRoutes')
 const statRoutes = require('./routes/statistiqueRoutes')
-
+const validation = require('./middlewares/validation')
 
 //mes middlewares
 //middleware de verification
 
-
-
+app.use(express.static('public'))
 // ma premiere routes pour les auteurs
 app.use('/api/auteurs', auteursRoutes)
 //deuxiemme route  pour les adherents
@@ -32,4 +31,4 @@ app.use('/api/stats',  statRoutes)
 
 
 
-//module.exports = app;
+module.exports = app;
