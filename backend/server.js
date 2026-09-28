@@ -10,7 +10,7 @@ const logger = require('./middlewares/logger')
 
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 const PORT= process.env.PORT || 5000;
 //midleware pour la gestion d'erreur
 
