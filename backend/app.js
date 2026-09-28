@@ -16,7 +16,7 @@ const validation = require('./middlewares/validation')
 //mes middlewares
 //middleware de verification
 
-app.use(express.static('public'))
+
 // ma premiere routes pour les auteurs
 app.use('/api/auteurs', auteursRoutes)
 //deuxiemme route  pour les adherents
